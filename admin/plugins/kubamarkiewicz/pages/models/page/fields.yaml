@@ -1,0 +1,30 @@
+fields:
+    name:
+        label: 'kubamarkiewicz.pages::lang.page.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    slug:
+        label: URL
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    published:
+        label: 'kubamarkiewicz.pages::lang.page.published'
+        span: auto
+        type: checkbox
+tabs:
+    fields:
+        meta_title:
+            label: 'kubamarkiewicz.pages::lang.page.meta_title'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: Metadata
+        meta_description:
+            label: 'kubamarkiewicz.pages::lang.page.meta_description'
+            size: ''
+            oc.commentPosition: ''
+            span: left
+            type: textarea
+            tab: Metadata
