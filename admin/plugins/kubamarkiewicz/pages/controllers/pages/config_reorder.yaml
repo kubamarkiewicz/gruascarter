@@ -1,5 +1,0 @@
-title: Pages
-modelClass: KubaMarkiewicz\Pages\Models\Page
-nameFrom: name
-toolbar:
-    buttons: reorder_toolbar
