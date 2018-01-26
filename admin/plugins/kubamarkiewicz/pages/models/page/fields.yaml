@@ -4,21 +4,31 @@ fields:
         oc.commentPosition: ''
         span: auto
         type: text
-    slug:
-        label: URL
-        oc.commentPosition: ''
-        span: auto
-        type: text
     published:
         label: 'kubamarkiewicz.pages::lang.page.published'
         span: auto
         type: checkbox
 tabs:
     fields:
+        parent:
+            label: Parent page
+            oc.commentPosition: ''
+            nameFrom: name
+            descriptionFrom: description
+            span: left
+            type: relation
+            tab: Basic
+            emptyOption: ---
+        slug:
+            label: URL
+            oc.commentPosition: ''
+            span: left
+            type: text
+            tab: Basic
         meta_title:
             label: 'kubamarkiewicz.pages::lang.page.meta_title'
             oc.commentPosition: ''
-            span: auto
+            span: left
             type: text
             tab: Metadata
         meta_description:
