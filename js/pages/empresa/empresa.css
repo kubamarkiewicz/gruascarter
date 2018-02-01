@@ -1,0 +1,88 @@
+
+section#empresa-about-us {
+	background-color: rgba(250, 247, 242, 1);
+}
+section#empresa-about-us .side-image {
+	background-image: url(../../images/empresa/side.jpg);
+	background-size: cover;
+	background-position: center center;;;;
+}
+section#empresa-about-us .text {
+	text-align: center;;
+}
+section#empresa-about-us .text .wrap {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 394px;
+	padding: 105px 15px;;;;
+}
+section#empresa-about-us .text .wrap > h1 {
+	font-size: 46px;
+	color: #DBD8D2;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 900;
+	letter-spacing: 0.4em;
+	margin-bottom: 40px;;
+}
+section#empresa-about-us .text .wrap > h1 strong {
+	color: #151B4E;
+}
+section#empresa-about-us .text .wrap > main {
+	color: #151B4E;
+	font-weight: 300;;
+}
+
+
+section#empresa-calidades {
+	padding: 100px 0 50px 0;
+}
+section#empresa-calidades .calidad {
+	text-align: center;
+	padding: 50px 50px 50px 50px;;;
+}
+section#empresa-calidades .calidad .icon {
+}
+section#empresa-calidades .calidad h3 {
+	font-size: 18px;
+	margin-top: 40px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 900;
+	margin-bottom: 20px;;;
+}
+section#empresa-calidades .calidad main {
+	max-width: 190px;
+	margin: 0 auto;
+	font-weight: 300;;;
+}
+
+
+section#empresa-footer {
+	background-position: center top;
+	background-size: cover;
+	height: 60vw;
+	margin: 20vw 0;
+}
+
+
+
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+	
+	section#empresa-about-us .side-image {
+		height: calc(62vh - 80px);
+	}
+
+	section#empresa-about-us .text .wrap > h1 {
+	font-size: 34px;;
+
+	}
+
+	section#empresa-footer {;
+	margin: 0vh 0;;
+	height: 100vh;;
+		
+	}
+
+}

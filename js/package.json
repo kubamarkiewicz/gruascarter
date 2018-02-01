@@ -1,0 +1,23 @@
+{
+  "name": "my-awesome-package",
+  "description": "my-awesome-package",
+  "repository": "my-awesome-package",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.8",
+    "angular-parallax-npm": "0.0.4",
+    "angular-route": "^1.6.6",
+    "angular-sanitize": "^1.6.6",
+    "angular-translate": "^2.15.2",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "jquery-inview": "^1.1.2",
+    "jquery.appear": "^1.0.1",
+    "jquery.stellar": "^0.6.2",
+    "paroller.js": "^1.2.0",
+    "three": "^0.87.1",
+    "three-obj-loader": "^1.1.2",
+    "three-window-resize": "^1.0.4"
+  }
+}

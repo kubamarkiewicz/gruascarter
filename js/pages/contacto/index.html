@@ -1,0 +1,69 @@
+
+<section id="contacto-form">
+	
+	<div class="container">
+		
+		<form id="my-form" ng-submit="submit()">
+
+			<div class="form-group">
+				<input class="form-control" type="text" ng-model="name" placeholder="{{ 'pages.contacto.formulario.Nombre' | translate }}" required>
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="email" ng-model="email" placeholder="E-mail" required>
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" ng-model="phone" placeholder="{{ 'pages.contacto.formulario.Teléfono' | translate }}" required>
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" ng-model="subject" placeholder="{{ 'pages.contacto.formulario.Asunto' | translate }}" required>
+			</div>
+			<div class="form-group">
+				<textarea  ng-model="message" class="form-control" placeholder="{{ 'pages.contacto.formulario.Mensaje' | translate }}"></textarea>
+    		</div>	
+			<div class="form-group text-right">
+				<button type="submit" class="btn" data-loading-text="<span class='glyphicon glyphicon-repeat gly-spin'></span> {{ 'pages.contacto.formulario.Enviando' | translate }} ...">{{ 'pages.contacto.formulario.Enviar' | translate }}</button>
+			</div>
+		</form>
+
+		<p class="alert alert-success" ng-show="contactSent"><span class="glyphicon glyphicon-ok"></span> {{ 'pages.contacto.formulario.Mensaje enviado' | translate }}</p> 
+
+	</div>
+
+</section>
+
+
+<section id="contacto-map">
+	
+	<div class="container">
+
+		<div id="map"></div>
+
+	</div>
+
+</section>
+
+
+<section id="contacto-information">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-6" translate="pages.contacto.columna-1" translate-type="richeditor">
+				<p>
+					<a href="tel:+34977677876">T +34 977 677 876</a><br>
+					F +34 977 677 628<br>
+					<a href="mailto:ahumados@reyesyvaron.com">ahumados@reyesyvaron.com</a>
+				</p>
+			</div>
+			<div class="col-sm-6" translate="pages.contacto.columna-2" translate-type="richeditor">
+				<p>
+					C/Alacant, Nave 9-11<br>
+				43713 Els Arquets Sant Jaume dels Domenys <br>
+				Tarragona (Spain)
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+</section>

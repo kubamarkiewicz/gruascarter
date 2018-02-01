@@ -1,0 +1,211 @@
+
+section#home-1 {
+	height: 80vw;
+	min-height: 80vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-color: #081e21;
+}
+section#home-1 .lead {
+	background-color: rgba(0,0,0,0.5);
+	color: #ffffff;
+	margin-top: 20vw;
+	text-align: center;;;;;
+}
+section#home-1 .lead h2 {
+	font-size: 70px;
+	letter-spacing: -3.5px;
+	position: relative;
+	margin-bottom: 6px;
+	animation-name: animation-home-1-h2;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+@keyframes animation-home-1-h2 {
+    0%   {opacity: 0; transform: translateX(100px);}
+    100% {opacity: 1; transform: translateX(0px)}
+}
+section#home-1 .lead hr {
+	border-bottom: 8px solid #ffda1f;
+	position: absolute;
+	left: calc(50% - 50px);
+	border-top: 0;
+	margin: 0;
+	animation-name: animation-home-1-hr;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+@keyframes animation-home-1-hr {
+    0%   {width: 0;}
+    100% {width: 100px;}
+}
+section#home-1 .lead h3 {
+	color: #CCCCCC;
+	font-size: 22px;
+	margin-bottom: 24px;
+	margin-top: 35px;
+	animation-name: animation-home-1-h3;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	opacity: 0;
+}
+@keyframes animation-home-1-h3 {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+section#home-2 {
+	color: #A0A09F;
+	font-size: 18px;
+	padding-top: 35px;
+	padding-bottom: 35px;;;;;;
+}
+
+
+section#home-3 {
+	background-color: #e2c42e;
+	position: relative;
+}
+section#home-3::before {
+	content: "";
+	position: absolute;
+	background-color: #302e2e;
+	width: 50vw;
+	height: 100%;
+	z-index: 0;;
+}
+section#home-3 h2 {
+	font-size: 60px;
+	margin-top: 130px;
+	text-align: center;
+	margin-bottom: 130px;;;
+}
+section#home-3 .first-column {
+	background-color: #302e2e;
+	color: #ffffff;
+	opacity: 0; 
+	transform: translateX(50vw);
+	overflow: hidden;;
+}
+section#home-3 .first-column.appeared {
+	animation-name: animation-home-3-first-column;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-delay: 0.5s;
+}
+@keyframes animation-home-3-first-column {
+    0%   {opacity: 0; transform: translateX(50vw);}
+    100% {opacity: 1; transform: translateX(0)}
+}
+section#home-3 .first-column h2, 
+section#home-3 .first-column h4 {
+	color: inherit;
+}
+section#home-3 .col-xs-6 {
+	text-align: center;
+}
+section#home-3 .col-md-6 {
+	text-align: center;
+	padding-bottom: 130px;;
+}
+section#home-3 p.img {
+	line-height: 71px;
+}
+section#home-3 p.img img {
+	vertical-align: bottom;;
+}
+section#home-3 h4 {
+	font-size: 22px;
+	margin-bottom: 30px;;
+}
+
+
+section#home-4 {
+	height: 64vw;
+	min-height: 80vh;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+section#home-4 .lead {
+	background-color: rgba(250, 250, 250, 0.78);
+}
+section#home-4 .lead h2 {
+	color: #605E5E;
+	font-size: 42px;
+	text-align: center;
+	margin: 33px 0;;;	
+	opacity: 0; 
+	transform: translateX(-25vw);
+}
+section#home-4 .lead h2.appeared {
+	animation-name: animation-home-4-lead;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+@keyframes animation-home-4-lead {
+    0%   {opacity: 0; transform: translateX(-25vw);}
+    100% {opacity: 1; transform: translateX(0)}
+}
+
+
+section#home-contact {
+	background-color: #232323;
+	color: #ffffff;
+	text-align: center;
+}
+section#home-contact h2 {
+	font-size: 69px;
+	color: #FFDA1F;
+	margin: 120px 0 30px 0;;;;
+}
+section#home-contact h4 {
+	font-size: 22px;
+	margin-bottom: 30px;
+	color: inherit;;
+}
+section#home-contact h3 {
+	font-size: 26px;
+}
+section#home-contact h3 a {
+	color: #ffffff;
+	text-decoration: none;;
+}
+section#home-contact .map {
+	margin-top: 85px;
+	margin-bottom: 85px;;
+}
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+
+	section#home-1 .lead h2 {
+		font-size: 40px;
+	}
+	section#home-3::before {
+		display: none;
+	}
+	section#home-3 h2 {
+		font-size: 40px;
+		margin-top: 80px;
+		margin-bottom: 80px;;;
+	}
+	section#home-4 .lead h2 {
+		font-size: 30px;
+	}
+	section#home-contact h2 {
+	font-size: 40px;;
+		
+	}
+
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Grúas Carter</title>
+    <meta name="description" content="">
+    <base href="/2018/gruas_carter/www/">
+    <!-- <base href="/"> -->
+
+    <!-- Le styles -->
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="js/pages/home/home.css" rel="stylesheet">
+    <link href="js/pages/nosotros/nosotros.css" rel="stylesheet">
+
+	<link rel="icon" href="images/favicon.png">
+</head>
+<body class="page-home loading" ng-app="myApp">
+
+	<header>
+		<div class="container">
+			<a href="index.html" id="logo"><img src="images/logo.png" alt="Grúas Carter"></a>
+			<div id="hamburger">
+				<div class="slice"></div>
+				<div class="slice"></div>
+				<div class="slice"></div>
+			</div>
+			<nav>
+                <a href="index.html" class="home" translate="menu.home">INICIO</a>
+				<a href="nosotros" class="nosotros" translate="menu.nosotros">NOSOTROS</a>
+                <a href="compromisos" class="compromisos" translate="menu.compromisos">COMPROMISOS</a>
+                <a href="grupo" class="grupo" translate="menu.grupo">EL GRUPO</a>
+                <a href="empresas" class="empresas" translate="menu.empresas">EMPRESAS</a>
+			</nav>
+		</div>
+	</header>
+
+	<main ng-view autoscroll="true"></main>
+
+	
+	<footer>
+	</footer>
+
+
+
+	<!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/node_modules/angular/angular.min.js"></script>
+    <script src="js/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="js/node_modules/angular-translate/dist/angular-translate.min.js"></script>
+    <script src="js/node_modules/angular-translate/dist/angular-translate-loader-url/angular-translate-loader-url.min.js"></script>
+    <script src="js/node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="js/node_modules/angular-animate/angular-animate.min.js"></script>
+
+    <!-- Angular Application -->
+    <script src="js/config/api.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Pages -->
+    <script src="js/pages/home/home-controller.js"></script>
+    <script src="js/pages/nosotros/nosotros-controller.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/parallax-service.js"></script>
+
+    <!-- Other libraries -->
+    <script src="js/node_modules/jquery.appear/jquery.appear.js"></script>
+
+
+</body>
+</html>

@@ -66,4 +66,12 @@
   'RainLab\\Builder\\Classes\\StandardControlsRegistry' => 'plugins/rainlab/builder/classes/StandardControlsRegistry.php',
   'RainLab\\Builder\\Classes\\ControlDesignTimeProviderBase' => 'plugins/rainlab/builder/classes/ControlDesignTimeProviderBase.php',
   'RainLab\\Builder\\Widgets\\DefaultControlDesignTimeProvider' => 'plugins/rainlab/builder/widgets/DefaultControlDesignTimeProvider.php',
+  'cms\\Controllers\\index' => 'modules/cms/controllers/index.php',
+  'RainLab\\Translate\\Behaviors\\TranslatablePageUrl' => 'plugins/rainlab/translate/behaviors/TranslatablePageUrl.php',
+  'RainLab\\Translate\\Components\\LocalePicker' => 'plugins/rainlab/translate/components/LocalePicker.php',
+  'RainLab\\Translate\\Components\\AlternateHrefLangElements' => 'plugins/rainlab/translate/components/AlternateHrefLangElements.php',
+  'RainLab\\Builder\\Components\\RecordList' => 'plugins/rainlab/builder/components/RecordList.php',
+  'RainLab\\Builder\\Components\\RecordDetails' => 'plugins/rainlab/builder/components/RecordDetails.php',
+  'kubamarkiewicz\\translations\\Controllers\\translations' => 'plugins/kubamarkiewicz/translations/controllers/translations.php',
+  'KubaMarkiewicz\\Translations\\Models\\Translation' => 'plugins/kubamarkiewicz/translations/models/Translation.php',
 );

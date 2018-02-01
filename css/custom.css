@@ -1,0 +1,362 @@
+
+/************************************************
+ Bootstrap 3 Grid Breakpints (http://getbootstrap.com/css/#grid)
+
+ xs - Extra small devices 	< 768 px
+ sm - Small devices			< 992 px
+ md - Medium devices		< 1200 px
+ lg - Large devices			>= 1200 px
+
+************************************************/
+
+
+/***********************************************/
+/* Fonts                                       */
+/***********************************************/
+
+
+/***********************************************/
+/* General styles                              */
+/***********************************************/
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #2F2E2E;
+	font-size: 15px;
+}
+a {
+	color: #11A2CF;
+	text-decoration: underline;
+	transition: all 0.4s ease;
+}
+ /* on hover, select */
+a:hover, a:focus { 
+	color: #11A2CF;
+	text-decoration: underline;
+}
+/* on press */
+a:active {  
+	color: #11A2CF;
+	text-decoration: underline;
+	opacity: 0.8;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+h2 {
+}
+h5 {
+}
+hr {
+}
+img {
+	max-width: 100%;
+}
+
+
+/* loading */
+body.loading p,
+body.loading a,
+body.loading span,
+body.loading h1,
+body.loading h2,
+body.loading h3,
+body.loading h4,
+body.loading h5,
+body.loading > footer {
+	visibility: hidden;
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+
+}
+
+/***********************************************/
+/* Layout divs                                 */
+/***********************************************/
+
+.container {
+    max-width: 980px;
+    width: 100%;
+}
+body > main {
+	margin-top: 138px;
+}
+
+
+
+/***********************************************/
+/* Page transitions                            */
+/***********************************************/
+
+.ng-enter {
+    transition: all 0.3s cubic-bezier(.46,1,1,1);
+    opacity: 0;
+    transform: translateX(50%);
+}
+.ng-enter.ng-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.ng-leave {
+    transition: all 0.1s cubic-bezier(.46,1,1,1);
+  	opacity:1;
+}
+.ng-leave.ng-leave-active {
+  	opacity:0;
+}
+
+body.prev-page-undefined .ng-enter {
+    transform: translateX(0%);
+}
+
+
+
+/***********************************************/
+/* Overwritten Bootstrap Styles                */
+/***********************************************/
+
+
+.lead {
+}
+
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {;
+}
+.row.is-flex::before,
+.row.is-flex::after {
+	display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.row.is-flex {
+	    display: block;
+	}
+
+
+}
+
+
+
+
+/***********************************************/
+/* Forms                                       */
+/***********************************************/
+
+.form-control {
+    border-radius: 0;
+    background-color: #f0f0f0;
+    box-shadow: none;
+    border: none;
+    height: 38px;;;;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+textarea.form-control {
+	height: 80px;
+}
+.btn {
+    border-radius: 0;
+    background-color: #151B4E;
+    color: #ffffff;
+}
+.btn.focus, .btn:focus, .btn:hover {
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+/***********************************************/
+/* Components	               		           */
+/***********************************************/
+
+body > header {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 138px;
+    top: 0;
+    background-color: #ffda1f;
+    padding-bottom: 9px;;
+} 
+body > header .container {
+    flex-direction: row;
+    align-items: flex-end;;
+    height: 100%;
+    display: flex;;;;;
+} 
+#logo {;
+}
+#logo img {
+}
+
+body > header nav {
+    display: inline-block;
+    padding-bottom: 2px;;
+}
+body > header nav > a,
+body > header nav > span {
+	color: #2F2E2E;
+	font-size: 14px;
+	text-decoration: none;;
+	width: 158px;;
+	display: inline-block;;
+	border-left: 1px solid rgba(173, 162, 132, 1);;
+	text-align: center;;
+	line-height: 100%;;;;;;;
+}
+body > header nav > a:first-child {
+	border-left: none;
+}
+body > header nav > a:hover,
+body > header nav > a:focus,
+body > header nav > a:active {
+	color: #A0A09F;
+	text-decoration: none;
+}
+body > header nav a.selected,
+body.page-home > header nav a.home,
+body.page-empresas > header nav a.empresas {
+	color: #A0A09F;
+}
+#hamburger {
+    display: none;
+    z-index: 10;
+}
+#hamburger .slice {
+    border-radius: 2px;
+    display: block;
+    height: 4px;
+    width: 28px;
+    background-color: #2F2E2E;
+}
+#hamburger .slice + .slice {
+    margin-top: 4px;
+}
+
+
+body > main {
+	overflow: hidden;
+}
+
+body > footer {
+} 
+
+
+
+
+.parallax-mask {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+
+}
+@media screen and (max-width: 991px) {
+
+	body {
+	}
+
+	#logo img {;
+		width: 50%;
+	}
+
+	#hamburger {
+	    cursor: pointer;
+	    display: block;
+	    position: absolute;
+	    right: 20px;
+	    top: 25px;;;;;
+	}
+	body > header {
+		height: 70px;
+		padding-bottom: 5px;
+	}
+	body > header #logo {
+		position: absolute;
+	}
+	body > header nav {
+	    visibility: hidden;
+	    opacity: 0;
+	    transition: visibility 0s linear 0.35s, opacity 0.35s ease-out;
+	    position: fixed;
+	    height: 100%;
+	    width: 100%;
+	    z-index: 14;
+	    left: 0;
+	    top: 70px;
+	    margin: 0;
+	    padding-top: 20px;
+	    background: #fcda33;
+	}
+	body > header nav.expanded {
+		visibility: visible;
+  		opacity: 1;
+	    transition-delay:0s;
+		height: calc(100vh - 71px);
+		overflow-y: auto;;
+	}
+	body > header .container {
+   	}
+	body > header nav a,
+	body > header nav span {
+		display: block;
+		text-align: center;
+		margin: 20px 10px;
+		font-size: 22px;
+		width: auto;
+		border-left: 0;;;
+	}
+	body > header nav span {
+		
+	}
+	body > header nav span.lang a,
+	body > header nav span.social a {
+		display: inline-block;
+		margin: 0 7px;
+	}
+	body > header nav span .submenu {
+	    visibility: visible;
+  	    opacity: 1;
+	    transition-delay:0s;
+	    position: relative;
+	    margin: 0;
+	    padding: 0;
+	    top: auto;
+	    left: auto;
+	}
+	body > header nav .submenu a {
+		margin-bottom: 0;
+		font-size: 80%;;
+	}
+	body > header nav span.lang {
+	    margin-left: 10px;
+	}
+	
+	body > main {
+	margin-top: 70px;;
+	}
+
+	.anchor-offset::before {
+		height:80px; /* fixed header height*/
+	}
+
+}
+
