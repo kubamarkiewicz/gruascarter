@@ -239,15 +239,14 @@ body.page-empresas > header nav a.empresas {
     display: none;
     z-index: 10;
 }
-#hamburger .slice {
-    border-radius: 2px;
+#hamburger .slice {;
     display: block;
-    height: 4px;
+    height: 3px;
     width: 28px;
     background-color: #2F2E2E;
 }
 #hamburger .slice + .slice {
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 
@@ -329,50 +328,36 @@ hr.animated {
 	}
 	body > header nav.expanded {
 		visibility: visible;
-  		opacity: 1;
-	    transition-delay:0s;
-		height: calc(100vh - 71px);
-		overflow-y: auto;;
+	    opacity: 1;
+	    transition-delay: 0s;
+	    height: calc(100vh - 71px);
+	    overflow-y: auto;
+	    background-color: #302e2e;
+	    color: #fcda33;
 	}
 	body > header .container {
    	}
 	body > header nav a,
 	body > header nav span {
-		display: block;
-		text-align: center;
-		margin: 20px 10px;
-		font-size: 22px;
-		width: auto;
-		border-left: 0;;;
+	    display: block;
+	    text-align: center;
+	    margin: 20px 55px;
+	    font-size: 18px;
+	    width: auto;
+	    border-left: 0;
+	    color: #fcda33;
+	    border-top: 1px solid #ffffff;
+	    padding-top: 15px;
+	}
+	body > header nav > a:first-child {
+		border-top: none;
 	}
 	body > header nav span {
 		
 	}
-	body > header nav span.lang a,
-	body > header nav span.social a {
-		display: inline-block;
-		margin: 0 7px;
-	}
-	body > header nav span .submenu {
-	    visibility: visible;
-  	    opacity: 1;
-	    transition-delay:0s;
-	    position: relative;
-	    margin: 0;
-	    padding: 0;
-	    top: auto;
-	    left: auto;
-	}
-	body > header nav .submenu a {
-		margin-bottom: 0;
-		font-size: 80%;;
-	}
-	body > header nav span.lang {
-	    margin-left: 10px;
-	}
 	
 	body > main {
-	margin-top: 70px;;
+		margin-top: 70px;;
 	}
 
 	.anchor-offset::before {
