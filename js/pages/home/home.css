@@ -22,25 +22,14 @@ section#home-1 .lead h2 {
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
+	color: #ffffff;;
 }
 @keyframes animation-home-1-h2 {
     0%   {opacity: 0; transform: translateX(100px);}
     100% {opacity: 1; transform: translateX(0px)}
 }
 section#home-1 .lead hr {
-	border-bottom: 8px solid #ffda1f;
-	position: absolute;
 	left: calc(50% - 50px);
-	border-top: 0;
-	margin: 0;
-	animation-name: animation-home-1-hr;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease;
-}
-@keyframes animation-home-1-hr {
-    0%   {width: 0;}
-    100% {width: 100px;}
 }
 section#home-1 .lead h3 {
 	color: #CCCCCC;

@@ -90,6 +90,10 @@ app.config(function ($routeProvider, $locationProvider) {
             controller: 'NosotrosController', 
             templateUrl: 'js/pages/nosotros/index.html' 
         })   
+        .when('/compromisos', { 
+            controller: 'CompromisosController', 
+            templateUrl: 'js/pages/compromisos/index.html' 
+        })   
         .otherwise({ 
             redirectTo: '/' 
         }); 
