@@ -76,4 +76,6 @@
   'KubaMarkiewicz\\Translations\\Models\\Translation' => 'plugins/kubamarkiewicz/translations/models/Translation.php',
   'kubamarkiewicz\\gruascarter\\Plugin' => 'plugins/kubamarkiewicz/gruascarter/Plugin.php',
   'KubaMarkiewicz\\Gruascarter\\Models\\Settings' => 'plugins/kubamarkiewicz/gruascarter/models/Settings.php',
+  'KubaMarkiewicz\\Gruascarter\\Api\\Index' => 'plugins/kubamarkiewicz/gruascarter/api/Index.php',
+  'KubaMarkiewicz\\Gruascarter\\Api\\Contact' => 'plugins/kubamarkiewicz/gruascarter/api/Contact.php',
 );

@@ -11,21 +11,19 @@ class Index extends Controller
 
     public function index()
     {
-        $currentRoute = Route::getCurrentRoute()->getPath();
+        $currentRoute = Route::getCurrentRoute()->uri();
 
         $data = [
             'routes' => []
         ];
 
-        // dump(Route::getCurrentRoute()->getPath());
-        $urlPrefix = Route::getCurrentRoute()->getPath();
-        // dump(Route::getRoutes());
+        $urlPrefix = Route::getCurrentRoute()->uri();
         $routes = Route::getRoutes();
 		foreach ($routes as $route) {
-			if ((strpos($route->getPath(), $urlPrefix) === 0) && ($route->getPath() != $currentRoute)) {
+			if ((strpos($route->uri(), $urlPrefix) === 0) && ($route->uri() != $currentRoute)) {
                 $data['routes'][] = [
-                    'method' => $route->getMethods()[0],
-                    'url'    => url().'/'.$route->getPath()
+                    'method' => $route->methods[0],
+                    'url'    => url('/').'/'.$route->uri()
                 ];
 			}
 		}
