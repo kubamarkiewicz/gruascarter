@@ -1,0 +1,6 @@
+plugin:
+    name: 'kubamarkiewicz.gruascarter::lang.plugin.name'
+    description: 'kubamarkiewicz.gruascarter::lang.plugin.description'
+    author: 'Kuba Markiewicz'
+    icon: oc-icon-circle-o
+    homepage: ''

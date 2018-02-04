@@ -74,4 +74,6 @@
   'RainLab\\Builder\\Components\\RecordDetails' => 'plugins/rainlab/builder/components/RecordDetails.php',
   'kubamarkiewicz\\translations\\Controllers\\translations' => 'plugins/kubamarkiewicz/translations/controllers/translations.php',
   'KubaMarkiewicz\\Translations\\Models\\Translation' => 'plugins/kubamarkiewicz/translations/models/Translation.php',
+  'kubamarkiewicz\\gruascarter\\Plugin' => 'plugins/kubamarkiewicz/gruascarter/Plugin.php',
+  'KubaMarkiewicz\\Gruascarter\\Models\\Settings' => 'plugins/kubamarkiewicz/gruascarter/models/Settings.php',
 );

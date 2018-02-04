@@ -80,7 +80,7 @@ section#home-3 .first-column {
 	color: #ffffff;
 	opacity: 0; 
 	transform: translateX(50vw);
-	overflow: hidden;;
+	overflow: hidden;
 }
 section#home-3 .first-column.appeared {
 	animation-name: animation-home-3-first-column;

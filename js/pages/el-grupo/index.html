@@ -1,0 +1,103 @@
+
+
+<div class="parallax-mask">
+
+	<section id="el-grupo-header" style="background-image: url(images/el-grupo/1.jpg)">
+
+		<div class="container">
+			<h2>El grupo Carter</h2>			
+			<hr class="animated">
+		</div>	
+
+	</section>
+
+</div>
+
+
+
+<section id="el-grupo-main">
+	<div class="container">
+		<h3>Siempre estamos cuando nos necesitan</h3>			
+		<hr class="animated">
+		<div class="main">
+			<p>En constante expansión y con una clara vocación de servicio, hoy Grupo Carter es líder en asistencia en carretera. Orientados a ofrecer éste servicio en su sentido más amplio satisfacemos las necesidades de nuestros clientes de manera eficaz y satisfactoria.</p>
+		</div>
+
+		<div class="row columns">
+			<div class="col-md-4">
+				<div class="icon">
+					<img src="images/el-grupo/2.png" alt="">
+				</div>
+				<h4>200 Grúas</h4>
+				<div class="text">
+					<p>Contamos hoy con el mayor parque móvil de grúas de España y manteniéndonos en constante renovación.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="icon">
+					<img src="images/el-grupo/3.png" alt="">
+				</div>
+				<h4>+ 300 trabajadores</h4>
+				<div class="text">
+					<p>Disponemos de una amplia red de capital humano que esta altamente cualificado y en constante formación.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="icon">
+					<img src="images/el-grupo/4.png" alt="">
+				</div>
+				<h4>Abarcamos todo el territorio español</h4>
+				<div class="text">
+					<p>Nuestros servicios abarcan un amplio territorio con presencia en diferentes CCAA y vocación de servicio a nivel nacional.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="el-grupo-contact">
+	
+
+	<div class="container">
+		
+		<div class="row is-flex">
+
+			<div class="col-md-6 column-left">
+				<img src="images/el-grupo/5.png" class="logo" alt="">
+				<h3>¡Pide información!</h3>
+				<h4>COMPLETA TUS DATOS Y TE CONTACTAREMOS BREVEMENTE</h4>
+			</div>
+			
+			<div class="col-md-6 column-right">
+
+				<form id="my-form" ng-submit="submit()">
+
+					<div class="form-group">
+						<input class="form-control" type="text" ng-model="name" placeholder="{{ 'pages.el-grupo.formulario.Nombre' | translate }}" required>
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="email" ng-model="email" placeholder="E-mail" required>
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" ng-model="subject" placeholder="{{ 'pages.el-grupo.formulario.Asunto' | translate }}" required>
+					</div>
+					<div class="form-group">
+						<textarea  ng-model="message" class="form-control" placeholder="{{ 'pages.el-grupo.formulario.Mensaje' | translate }}"></textarea>
+		    		</div>	
+					<div class="form-group text-right">
+						<button type="submit" class="btn" data-loading-text="<span class='glyphicon glyphicon-repeat gly-spin'></span> {{ 'pages.el-grupo.formulario.Enviando' | translate }} ...">{{ 'pages.el-grupo.formulario.Enviar' | translate }}</button>
+					</div>
+				</form>
+
+				<p class="alert alert-success" ng-show="contactSent"><span class="glyphicon glyphicon-ok"></span> {{ 'pages.el-grupo.formulario.Mensaje enviado' | translate }}</p> 
+
+			</div>
+
+		</div>
+		
+
+	</div>
+
+</section>
