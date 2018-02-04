@@ -22,9 +22,9 @@ app.controller('ElGrupoController', function($scope, $rootScope, $http, $routePa
             }
         })
         .then(function(response) {
-            if (response.data && response.data == 'true') {
+            if (response.data && response.data === true) {
             	$scope.contactSent = true;
-            	$scope.name = $scope.email = $scope.subject = $scope.message;
+            	$scope.name = $scope.email = $scope.subject = $scope.message = '';
             }
             $("#my-form button[type=submit]").button('reset').attr('disabled', false);
         });

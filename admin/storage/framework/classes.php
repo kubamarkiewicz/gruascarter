@@ -78,4 +78,6 @@
   'KubaMarkiewicz\\Gruascarter\\Models\\Settings' => 'plugins/kubamarkiewicz/gruascarter/models/Settings.php',
   'KubaMarkiewicz\\Gruascarter\\Api\\Index' => 'plugins/kubamarkiewicz/gruascarter/api/Index.php',
   'KubaMarkiewicz\\Gruascarter\\Api\\Contact' => 'plugins/kubamarkiewicz/gruascarter/api/Contact.php',
+  'KubaMarkiewicz\\Translations\\Api\\Translations' => 'plugins/kubamarkiewicz/translations/api/Translations.php',
+  'KubaMarkiewicz\\Pages\\Api\\Pages' => 'plugins/kubamarkiewicz/pages/api/Pages.php',
 );
