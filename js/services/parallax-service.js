@@ -45,7 +45,7 @@ var ParallaxService = angular.module('ParallaxService', [])
                         // var backgroundPosition = 'calc(' + delta / ParallaxService.parallaxRate + 'px + 50vh + 50%)';
                         // element['element'].css('background-position', 'center ' + backgroundPosition);
                         var translate = 'calc(' + delta / ParallaxService.parallaxRate + 'px - 50%)';
-                        element['background-element'].css('transform', 'translateY(' + translate + ')');
+                        // element['background-element'].css('transform', 'translateY(' + translate + ')');
                     }
                 }
                 // move whole element

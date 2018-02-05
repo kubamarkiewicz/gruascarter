@@ -14,6 +14,7 @@ section#home-1 .lead {
 	text-align: center;;;;;
 }
 section#home-1 .lead h2 {
+	color: #ffffff;;
 	font-size: 70px;
 	letter-spacing: -3.5px;
 	position: relative;
@@ -22,7 +23,6 @@ section#home-1 .lead h2 {
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
-	color: #ffffff;;
 }
 @keyframes animation-home-1-h2 {
     0%   {opacity: 0; transform: translateX(100px);}

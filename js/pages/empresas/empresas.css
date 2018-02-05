@@ -1,23 +1,53 @@
 
-section#nosotros-lead {
+section#empresas-header {
+	padding-top: 120px;
+	padding-bottom: 160px;;;
 }
-section#nosotros-lead h2 {
-	text-align: right;
+section#empresas-header h2 {
 	font-size: 100px;
-	margin-bottom: -4px;;;
+	letter-spacing: -5px;
+	color: #ffffff;
+	text-align: center;
+	animation-name: empresas-header-h2;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
 }
-section#nosotros-lead img.image {
-	margin-top: -70px;
-	margin-left: -40px;
+@keyframes empresas-header-h2 {
+    0%   {opacity: 0; transform: translateX(100px);}
+    100% {opacity: 1; transform: translateX(0px)}
+}
+section#empresas-header hr.animated {
+	left: 804px;
 }
 
+section#empresas-main {
+	padding-top: 15px;
+	padding-bottom: 30px;
+	background-color: #fafafa;
+}
+section#empresas-main h2 {
+}
 
-section#nosotros-main {
-	background-color: #ffda1f;
-	margin-top: -84px;
-	padding-top: 84px;
-	padding-bottom: 35px;
-	margin-bottom: 35px;
+section#empresas-addresses {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #fafafa;
+}
+section#empresas-addresses .address {
+	padding-bottom: 30px;;
+}
+section#empresas-addresses .address main {
+}
+section#empresas-addresses .address main h3 {
+}
+section#empresas-addresses .address main a {
+	color: inherit;
+	text-decoration: none;
+}
+section#empresas-addresses .address .gmaps {
+}
+section#empresas-addresses .address .gmaps a {
 }
 
 
@@ -25,16 +55,10 @@ section#nosotros-main {
 @media screen and (max-width: 991px) {
 
 
-	section#nosotros-lead h2 {
+	section#empresas-header h2 {
 		font-size: 45px;
 	}
-	section#nosotros-lead img.image {
-		margin-top: -10px;
-		margin-left: -15px;	
-	}
-	section#nosotros-main {
-		margin-top: -60px;
-		padding-top: 60px;
+	section#empresas-main {
 	}
 
 }
