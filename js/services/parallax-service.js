@@ -51,7 +51,7 @@ var ParallaxService = angular.module('ParallaxService', [])
                 // move whole element
                 else {      
                     var translate = 'calc(' + delta / ParallaxService.parallaxRate + 'px + 50vh)';
-                    element['element'].css('transform', 'translateY(' + translate + ')');
+                    // element['element'].css('transform', 'translateY(' + translate + ')');
                 }
             }
         }

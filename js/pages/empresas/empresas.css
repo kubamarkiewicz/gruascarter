@@ -1,5 +1,9 @@
 
 section#empresas-header {
+}
+section#empresas-header .container {    
+	background-color: rgba(0,0,0,0.5);
+    max-width: 100%;
 	padding-top: 120px;
 	padding-bottom: 160px;;;
 }
@@ -23,7 +27,7 @@ section#empresas-header hr.animated {
 
 section#empresas-main {
 	padding-top: 15px;
-	padding-bottom: 30px;
+	padding-bottom: 45px;
 	background-color: #fafafa;
 }
 section#empresas-main h2 {
@@ -31,15 +35,20 @@ section#empresas-main h2 {
 
 section#empresas-addresses {
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 100px;
 	background-color: #fafafa;
 }
 section#empresas-addresses .address {
-	padding-bottom: 30px;;
+	padding-bottom: 45px;
+	background-image: url(../../../images/empresas/2.png);
+	background-repeat: no-repeat;
+	background-position: 48px -14px;
+	padding-left: 97px;;;;;;
 }
 section#empresas-addresses .address main {
 }
-section#empresas-addresses .address main h3 {
+section#empresas-addresses .address main h3 {    
+	margin-top: 0;;
 }
 section#empresas-addresses .address main a {
 	color: inherit;
@@ -54,11 +63,18 @@ section#empresas-addresses .address .gmaps a {
 /* mobile */
 @media screen and (max-width: 991px) {
 
-
 	section#empresas-header h2 {
-		font-size: 45px;
+		font-size: 60px;
+		letter-spacing: -2px;;;
+	}
+	section#empresas-header hr.animated {
+		left: calc(50% - 50px);;
 	}
 	section#empresas-main {
+	}
+	section#empresas-addresses .address {    
+	padding-left: 45px;    
+	background-position-x: 0;;;
 	}
 
 }

@@ -33,11 +33,26 @@
 				<div class="slice"></div>
 			</div>
 			<nav>
-                <a href="index.html" class="home" translate="menu.home">INICIO</a>
-				<a href="nosotros" class="nosotros" translate="menu.nosotros">NOSOTROS</a>
-                <a href="compromisos" class="compromisos" translate="menu.compromisos">COMPROMISOS</a>
-                <a href="el-grupo" class="grupo" translate="menu.grupo">EL GRUPO</a>
-                <a href="empresas" class="empresas" translate="menu.empresas">EMPRESAS</a>
+                <a 
+                    href="index.html" 
+                    class="home {{ pageSlug=='home' ? 'selected': '' }}" 
+                    translate="menu.home">INICIO</a>
+				<a 
+                    href="nosotros" 
+                    class="nosotros {{ pageSlug=='nosotros' ? 'selected': '' }}" 
+                    translate="menu.nosotros">NOSOTROS</a>
+                <a 
+                    href="compromisos" 
+                    class="compromisos {{ pageSlug=='compromisos' ? 'selected': '' }}" 
+                    translate="menu.compromisos">COMPROMISOS</a>
+                <a 
+                    href="el-grupo" 
+                    class="grupo {{ pageSlug=='grupo' ? 'selected': '' }}" 
+                    translate="menu.grupo">EL GRUPO</a>
+                <a 
+                    href="empresas" 
+                    class="empresas {{ pageSlug=='empresas' ? 'selected': '' }}" 
+                    translate="menu.empresas">EMPRESAS</a>
 			</nav>
 		</div>
 	</header>

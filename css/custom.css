@@ -240,9 +240,7 @@ body > header nav > a:active {
 	color: #A0A09F;
 	text-decoration: none;
 }
-body > header nav a.selected,
-body.page-home > header nav a.home,
-body.page-empresas > header nav a.empresas {
+body > header nav a.selected {
 	color: #A0A09F;
 }
 #hamburger {

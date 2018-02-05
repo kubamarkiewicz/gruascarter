@@ -136,12 +136,7 @@ section#el-grupo-contact .column-right.appeared {
 		letter-spacing: -2px;;;
 	}
 	section#el-grupo-header hr.animated {
-	left: calc(50% - 50px);;
-		
-	}
-	section#el-grupo-header img.image {
-	}
-	section#el-grupo-main {
+		left: calc(50% - 50px);;
 	}
 
 	section#el-grupo-contact .column-left {
