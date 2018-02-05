@@ -35,23 +35,23 @@
 			<nav>
                 <a 
                     href="index.html" 
-                    class="home {{ pageSlug=='home' ? 'selected': '' }}" 
+                    ng-class="{'selected': pageSlug=='home'}"
                     translate="menu.home">INICIO</a>
 				<a 
                     href="nosotros" 
-                    class="nosotros {{ pageSlug=='nosotros' ? 'selected': '' }}" 
+                    ng-class="{'selected': pageSlug=='nosotros'}"
                     translate="menu.nosotros">NOSOTROS</a>
                 <a 
                     href="compromisos" 
-                    class="compromisos {{ pageSlug=='compromisos' ? 'selected': '' }}" 
+                    ng-class="{'selected': pageSlug=='compromisos'}"
                     translate="menu.compromisos">COMPROMISOS</a>
                 <a 
                     href="el-grupo" 
-                    class="grupo {{ pageSlug=='grupo' ? 'selected': '' }}" 
+                    ng-class="{'selected': pageSlug=='el-grupo'}"
                     translate="menu.grupo">EL GRUPO</a>
                 <a 
                     href="empresas" 
-                    class="empresas {{ pageSlug=='empresas' ? 'selected': '' }}" 
+                    ng-class="{'selected': pageSlug=='empresas'}"
                     translate="menu.empresas">EMPRESAS</a>
 			</nav>
 		</div>

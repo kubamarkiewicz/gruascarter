@@ -118,7 +118,7 @@ app.config(['$httpProvider', function($httpProvider) {
 ]);
 
 
-app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route) {
+app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route, ParallaxService) {
 
     $rootScope.homeSlug = 'home';
 
@@ -158,6 +158,8 @@ app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route
         .addClass("page-"+$rootScope.pageSlug);
 
         $rootScope.setMetadata(); 
+
+        ParallaxService.remove();
     });
 
     $rootScope.$on('$routeChangeSuccess', function() {
