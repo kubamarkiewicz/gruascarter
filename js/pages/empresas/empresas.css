@@ -1,0 +1,40 @@
+
+section#nosotros-lead {
+}
+section#nosotros-lead h2 {
+	text-align: right;
+	font-size: 100px;
+	margin-bottom: -4px;;;
+}
+section#nosotros-lead img.image {
+	margin-top: -70px;
+	margin-left: -40px;
+}
+
+
+section#nosotros-main {
+	background-color: #ffda1f;
+	margin-top: -84px;
+	padding-top: 84px;
+	padding-bottom: 35px;
+	margin-bottom: 35px;
+}
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+
+
+	section#nosotros-lead h2 {
+		font-size: 45px;
+	}
+	section#nosotros-lead img.image {
+		margin-top: -10px;
+		margin-left: -15px;	
+	}
+	section#nosotros-main {
+		margin-top: -60px;
+		padding-top: 60px;
+	}
+
+}

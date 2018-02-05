@@ -270,6 +270,16 @@ body > footer {
 	position: relative;
 	overflow: hidden;
 }
+.parallax-mask .parallax-background {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 150%;;
+}
 
 hr.animated {
 	border-bottom: 8px solid #ffda1f;

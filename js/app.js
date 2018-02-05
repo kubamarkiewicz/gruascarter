@@ -97,6 +97,10 @@ app.config(function ($routeProvider, $locationProvider) {
         .when('/el-grupo', { 
             controller: 'ElGrupoController', 
             templateUrl: 'js/pages/el-grupo/index.html' 
+        })    
+        .when('/empresas', { 
+            controller: 'EmpresasController', 
+            templateUrl: 'js/pages/empresas/index.html' 
         })   
         .otherwise({ 
             redirectTo: '/' 
