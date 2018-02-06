@@ -3,8 +3,9 @@ var app = angular.module("myApp", [
     "ngRoute",
     "ngSanitize",
     'pascalprecht.translate',
-    'ParallaxService',
-    "ngAnimate"
+    'ParallaxService'
+    // "ngAnimate"
+    // 'angular-parallax'
 ]);
 
 // load configuration from files

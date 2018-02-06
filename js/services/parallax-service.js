@@ -82,9 +82,6 @@ var ParallaxService = angular.module('ParallaxService', [])
             this.elements[i]['height'] = this.elements[i]['element'].height();
             this.elements[i]['offset'] = this.elements[i]['element'].offset().top;
             console.log(this.elements[i]['offset']);
-            if (i == 0 && this.elements[i]['offset'] > this.windowHeight) {
-                this.elements[i]['offset'] = 138;
-            }
             // distance from the top of page to the center of element
             this.elements[i]['center-offset'] = this.elements[i]['offset'] + this.elements[i]['height'] * 0.5;
             if (!this.elements[i]['center-offset']) {
