@@ -33,15 +33,18 @@
 		<div class="row">
 			
 			<div 
-				ng-repeat="i in [].constructor(14) track by $index" 
-				class="col-sm-6 address"
-				ng-show="'pages.empresas.empresa-' + ($index + 1) + '.detalles' | translate">
-				<main translate="{{ 'pages.empresas.empresa-' + ($index + 1) + '.detalles' }}" translate-type="richeditor">
-					<h3>nombre</h3>
-					<p>detalles</p>
-				</main>
-				<div class="gmaps" ng-show="'pages.empresas.empresa-' + ($index + 1) + '.URL-de-Google-Maps' | translate">
-					<a href="{{ 'pages.empresas.empresa-' + ($index + 1) + '.URL-de-Google-Maps' | translate }}" target="_blank">{{ 'pages.empresas.Ver ubicación mapa' | translate }}</a>
+				ng-repeat="i in [].constructor(14) track by $index">
+				<div class="clearfix" ng-if="$index % 2 == 0"></div>
+				<div 
+					class="col-sm-6 address"
+					ng-show="'pages.empresas.empresa-' + ($index + 1) + '.detalles' | translate">
+					<main translate="{{ 'pages.empresas.empresa-' + ($index + 1) + '.detalles' }}" translate-type="richeditor">
+						<h3>nombre</h3>
+						<p>detalles</p>
+					</main>
+					<div class="gmaps" ng-show="'pages.empresas.empresa-' + ($index + 1) + '.URL-de-Google-Maps' | translate">
+						<a href="{{ 'pages.empresas.empresa-' + ($index + 1) + '.URL-de-Google-Maps' | translate }}" target="_blank">{{ 'pages.empresas.Ver ubicación mapa' | translate }}</a>
+					</div>
 				</div>
 			</div>
 
