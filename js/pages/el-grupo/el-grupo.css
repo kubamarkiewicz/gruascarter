@@ -1,8 +1,8 @@
 
 section#el-grupo-header {
-	background-size: cover;
-	background-repeat: no-repeat;
 	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 section#el-grupo-header .container {
 	background-color: rgba(0,0,0,0.5);
@@ -130,6 +130,10 @@ section#el-grupo-contact .column-right.appeared {
 /* mobile */
 @media screen and (max-width: 991px) {
 
+
+	section#el-grupo-header .container {
+		
+	}
 
 	section#el-grupo-header h2 {
 		font-size: 60px;

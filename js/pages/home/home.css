@@ -4,6 +4,7 @@ section#home-1 {
 	min-height: 80vh;
 	overflow: hidden;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 section#home-1 .lead {
 	background-color: rgba(0,0,0,0.5);
@@ -117,7 +118,8 @@ section#home-3 h4 {
 section#home-4 {
 	height: 64vw;
 	min-height: 80vh;
-	background-size: cover;;
+	background-size: cover;
+	background-repeat: no-repeat;;
 }
 section#home-4 .lead {
 	background-color: rgba(250, 250, 250, 0.78);
