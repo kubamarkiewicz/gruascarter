@@ -49,6 +49,7 @@ app.config(['$translateProvider', function ($translateProvider) {
 // define missing Translation Handler
 app.factory('missingTranslationHandlerFactory', function () {
     var called = [];
+    var sort_order = 0;
     return function (translationID) {
         // use last element from code as default translation
         var translation = translationID.substr(translationID.lastIndexOf(".") + 1);
@@ -65,7 +66,8 @@ app.factory('missingTranslationHandlerFactory', function () {
                 data    : {
                     code : translationID,
                     type : element.attr('translate-type'),
-                    translation : translation
+                    translation : translation,
+                    sort_order: ++sort_order
                 }
             });
         }

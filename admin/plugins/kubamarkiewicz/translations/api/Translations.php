@@ -51,14 +51,14 @@ class Translations extends Controller
 
         $translation = new Translation();
         $translation->code = $code;
-        $translation->sort_order = 9999;
+        $translation->sort_order = post('sort_order');
         $translation->type = post('type');
         $translation->translation = post('translation');
         $translation->save();
 
         // sort_order
         $section = substr($code, 0, strrpos($code, '.'));
-        $this->fixSortOrder($section);
+        // $this->fixSortOrder($section);
 
         return 'added';
     }

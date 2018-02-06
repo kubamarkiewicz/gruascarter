@@ -43,7 +43,8 @@ section#empresas-addresses .address {
 	background-image: url(../../../images/empresas/2.png);
 	background-repeat: no-repeat;
 	background-position: 48px -14px;
-	padding-left: 97px;;;;;;
+	padding-left: 97px;
+	min-height: 199px;;;;;;
 }
 section#empresas-addresses .address main {
 }
