@@ -1,7 +1,7 @@
 <?php return [
     'plugin' => [
         'name' => 'Páginas',
-        'description' => ''
+        'description' => '',
     ],
     'page' => [
         'name' => 'Nombre',
@@ -12,4 +12,5 @@
     'permissions' => [
         'manage' => 'Gestionar páginas',
     ],
+    'published' => 'Publicado',
 ];

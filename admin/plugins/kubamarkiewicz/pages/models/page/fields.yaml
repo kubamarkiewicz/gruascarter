@@ -5,20 +5,20 @@ fields:
         span: auto
         type: text
     published:
-        label: 'kubamarkiewicz.pages::lang.page.published'
+        label: 'kubamarkiewicz.pages::lang.published'
         span: auto
-        type: checkbox
+        type: switch
 tabs:
     fields:
         parent:
-            label: Parent page
+            label: 'Parent page'
             oc.commentPosition: ''
             nameFrom: name
             descriptionFrom: description
             span: left
             type: relation
             tab: Basic
-            emptyOption: ---
+            emptyOption: '---'
         slug:
             label: URL
             oc.commentPosition: ''

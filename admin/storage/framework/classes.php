@@ -80,4 +80,8 @@
   'KubaMarkiewicz\\Gruascarter\\Api\\Contact' => 'plugins/kubamarkiewicz/gruascarter/api/Contact.php',
   'KubaMarkiewicz\\Translations\\Api\\Translations' => 'plugins/kubamarkiewicz/translations/api/Translations.php',
   'KubaMarkiewicz\\Pages\\Api\\Pages' => 'plugins/kubamarkiewicz/pages/api/Pages.php',
+  'rainlab\\translate\\Controllers\\locales' => 'plugins/rainlab/translate/controllers/locales.php',
+  'RainLab\\Builder\\Classes\\MenusModel' => 'plugins/rainlab/builder/classes/MenusModel.php',
+  'RainLab\\Builder\\FormWidgets\\MenuEditor' => 'plugins/rainlab/builder/formwidgets/MenuEditor.php',
+  'RainLab\\Builder\\Classes\\LanguageMixer' => 'plugins/rainlab/builder/classes/LanguageMixer.php',
 );

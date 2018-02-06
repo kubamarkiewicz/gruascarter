@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
-        'name' => 'Traducciónes',
+        'name' => 'Textos',
         'description' => ''
     ]
 ];

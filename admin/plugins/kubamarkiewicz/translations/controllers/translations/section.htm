@@ -1,6 +1,6 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('kubamarkiewicz/translations/translations/section') ?>">Translations</a></li>
+        <li><a href="<?= Backend::url('kubamarkiewicz/translations/translations/section') ?>"><?= e(trans('kubamarkiewicz.translations::lang.plugin.name')) ?> <?= e(trans('kubamarkiewicz.translations::lang.in-section')) ?></a></li>
         <li><?=$section?></li>
     </ul>
 <?php Block::endPut() ?>
@@ -11,7 +11,7 @@
 
 	<aside>
 		
-		<h4>Sections</h4>
+		<h4><?= e(trans('kubamarkiewicz.translations::lang.select-section')) ?></h4>
 
 		<?php if($sections) foreach($sections as $key => $children) : ?>
 
@@ -51,7 +51,7 @@
 	<main>
 
 		<div id="language-switch">
-			<small>LANGUAGE</small>
+			<small><?= e(trans('kubamarkiewicz.translations::lang.language')) ?></small>
 			<select>
 				<?php if ($languages) foreach($languages as $locale => $label) : ?>
 					<option value="<?=$locale?>" <?=$locale==$language ? 'selected' : ''?>><?=$label?></option>
@@ -61,7 +61,7 @@
 
 
 
-		<h3>Translate section</h3>
+		<h3><?= e(trans('kubamarkiewicz.translations::lang.edit-section')) ?></h3>
 		<h2><?=$section?></h2>
 
 		<?php if($items) : ?>
@@ -92,7 +92,7 @@
 
 	    <?php else: ?>
 
-	    	<p><small>No translations in this section.</small></p>
+	    	<p><small><?//= e(trans('kubamarkiewicz.translations::lang.no-texts-in-section')) ?></small></p>
 
 	    <?php endif ?>
 

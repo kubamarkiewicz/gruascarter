@@ -6,7 +6,7 @@ plugin:
     homepage: 'http://markiewicz.click'
 navigation:
     main-menu-translations:
-        label: Traducciónes
+        label: 'kubamarkiewicz.translations::lang.plugin.name'
         url: /kubamarkiewicz/translations/translations/section
         icon: icon-font
         order: '9'

@@ -2,7 +2,7 @@
 <section id="empresas-header" style="background-image: url(images/empresas/1.jpg)" parallax-background parallax-ratio="0.2">
 
 		<div class="container">
-			<h2>Empresas del grupo</h2>
+			<h2 translate="pages.empresas.titulo">Empresas del grupo</h2>
 			<hr class="animated">
 		</div>
 
@@ -15,7 +15,7 @@
 	<div class="container">
 		
 		<div class="row">
-			<div class="col-sm-6 col-sm-offset-1">
+			<div class="col-sm-6 col-sm-offset-1" translate="pages.empresas.descripcion" translate-type="richeditor">
 				<h2>La mayor red</h2>
 				<p>Asistencias Carter contamos con una de las mas extensas redes de servicio de asistencia en carretera del estado español. Formado por profesionales capaces de resolver cualquier problema o improvisto que surja.<br>Buen viaje !  </p>
 			</div>
@@ -29,52 +29,24 @@
 <section id="empresas-addresses">
 
 	<div class="container">
-		
+
 		<div class="row">
 			
-			<div class="col-sm-6 address">
-				<main>
-					<h3>C/ Passeig Universal, 28</h3>
-					<p>
-						08042 Barcelona<br>
-						Tel.: <a href="tel:932 76 42 44">932 76 42 44</a><br>
-						asistenciacatalana@gruascarter.com
-					</p>
+			<div 
+				ng-repeat="i in [].constructor(14) track by $index" 
+				class="col-sm-6 address"
+				ng-show="'pages.empresas.empresa-' + ($index + 1) + '.descripcion' | translate">
+				<main translate="{{ 'pages.empresas.empresa-' + ($index + 1) + '.descripcion' }}" translate-type="richeditor">
+					<h3>dirección</h3>
+					<p>detalles</p>
 				</main>
-				<div class="gmaps">
-					<a href="" target="_blank">Ver ubicación mapa</a>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 address">
-				<main>
-					<h3>C/ Passeig Universal, 28</h3>
-					<p>
-						08042 Barcelona<br>
-						08042 Barcelona<br>
-						Tel.: <a href="tel:932 76 42 44">932 76 42 44</a><br>
-						asistenciacatalana@gruascarter.com
-					</p>
-				</main>
-				<div class="gmaps">
-					<a href="" target="_blank">Ver ubicación mapa</a>
-				</div>
-			</div>
-			
-			<div class="col-sm-6 address">
-				<main>
-					<h3>C/ Passeig Universal, 28</h3>
-					<p>
-						08042 Barcelona<br>
-						Tel.: <a href="tel:932 76 42 44">932 76 42 44</a><br>
-						asistenciacatalana@gruascarter.com
-					</p>
-				</main>
-				<div class="gmaps">
-					<a href="" target="_blank">Ver ubicación mapa</a>
+				<div class="gmaps" ng-show="'pages.empresas.empresa-' + ($index + 1) + '.google-maps-url' | translate">
+					<a href="{{ 'pages.empresas.empresa-' + ($index + 1) + '.google-maps-url' | translate }}" target="_blank">{{ 'pages.empresas.Ver ubicación mapa' | translate }}</a>
 				</div>
 			</div>
 
+		</div>
 
+	</div>
 
 </section>
