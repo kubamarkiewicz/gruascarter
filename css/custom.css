@@ -24,6 +24,7 @@ body {
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	color: #2F2E2E;
 	font-size: 15px;
+	overflow-x: hidden;;
 }
 a {
 	color: #11A2CF;
