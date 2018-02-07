@@ -10,7 +10,7 @@ section#compromisos-header h2 {
 	text-align: right;
 	font-size: 62px;
 	animation-name: animation-compromisos-header-h2;
-	animation-duration: 1s;
+	animation-duration: 2s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
 }

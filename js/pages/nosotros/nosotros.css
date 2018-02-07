@@ -4,7 +4,16 @@ section#nosotros-lead {
 section#nosotros-lead h2 {
 	text-align: right;
 	font-size: 100px;
-	margin-bottom: -4px;;;
+	margin-bottom: -4px;
+	animation-name: animation-nosotros-header-h2;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	margin-top: 80px;;
+}
+@keyframes animation-nosotros-header-h2 {
+    0%   {opacity: 0; transform: translateX(100px);}
+    100% {opacity: 1; transform: translateX(0px)}
 }
 section#nosotros-lead img.image {
 	margin-top: -70px;

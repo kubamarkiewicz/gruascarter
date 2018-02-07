@@ -3,9 +3,9 @@ section#empresas-header {
 }
 section#empresas-header .container {    
 	background-color: rgba(0,0,0,0.5);
-    max-width: 100%;
-	padding-top: 120px;
-	padding-bottom: 160px;;;
+    max-width: 100%;    
+	padding-bottom: 16vh;    
+	padding-top: 14vh;;;
 }
 section#empresas-header h2 {
 	font-size: 100px;
@@ -16,13 +16,14 @@ section#empresas-header h2 {
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease;
+	margin-bottom: 15px;;
 }
 @keyframes empresas-header-h2 {
     0%   {opacity: 0; transform: translateX(100px);}
     100% {opacity: 1; transform: translateX(0px)}
 }
 section#empresas-header hr.animated {
-	left: 804px;
+	left: calc(50vw + 308px);
 }
 
 section#empresas-main {
@@ -64,7 +65,7 @@ section#empresas-addresses .address .gmaps a {
 @media screen and (max-width: 991px) {
 
 	section#empresas-header h2 {
-		font-size: 60px;
+		font-size: 50px;
 		letter-spacing: -2px;;;
 	}
 	section#empresas-header hr.animated {
