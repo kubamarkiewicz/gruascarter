@@ -2,8 +2,7 @@ var ParallaxService = angular.module('ParallaxService', [])
 .service('ParallaxService', function ($rootScope) 
 {
 
-    // this.parallaxRate = 0.75; // between 0 and 1
-    this.parallaxRate = 1; // between 0 and 1
+    this.parallaxRate = 0.75; // between 0 and 1
 
     this.elements = [];
     this.initilized = false;
