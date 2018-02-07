@@ -9,6 +9,7 @@ var ParallaxService = angular.module('ParallaxService', [])
 
     this.add = function(element, background) 
     {
+
         this.elements.push({
             element     : element,
             height      : undefined,
@@ -18,55 +19,59 @@ var ParallaxService = angular.module('ParallaxService', [])
         
 
         var ParallaxService = this;
+            
+        setTimeout(function(){
 
 
-        // on scroll
-        $(window).off('scroll').on('scroll resize', onScroll);
+            // on scroll
+            $(window).off('scroll').on('scroll resize', onScroll);
 
 
-        function onScroll()
-        {
-            // console.log('onScroll');
-            if (!ParallaxService.initilized) {
-                ParallaxService.init();
-            }
+            function onScroll()
+            {
+                // console.log('onScroll');
+                if (!ParallaxService.initilized) {
+                    ParallaxService.init();
+                }
 
-            var scrollTop = $(this).scrollTop();
+                var scrollTop = $(this).scrollTop();
 
-            for (i in ParallaxService.elements) {
-                var element = ParallaxService.elements[i];
-                // move background
-                if (element['background']) {  
-                    if (element['background-element']) {  
-                        // distance between element center and screen center
-                        var distance =  scrollTop + 0.5 * ParallaxService.windowHeight - element['center-offset']; 
-                        var translate = distance * ParallaxService.parallaxRate;
-                        // element['element'].css('background-position', 'center ' + backgroundPosition);
-                        // var translate = 'calc(' + (scrollTop - ParallaxService.elements[i]['center-scroll'] / ParallaxService.parallaxRate) + 'px)';
-                        element['background-element'].css('transform', 'translateY(' + translate + 'px)');
+                for (i in ParallaxService.elements) {
+                    var element = ParallaxService.elements[i];
+                    // move background
+                    if (element['background']) {  
+                        if (element['background-element']) {  
+                            // distance between element center and screen center
+                            var distance =  scrollTop + 0.5 * ParallaxService.windowHeight - element['center-offset']; 
+                            var translate = distance * ParallaxService.parallaxRate;
+                            // element['element'].css('background-position', 'center ' + backgroundPosition);
+                            // var translate = 'calc(' + (scrollTop - ParallaxService.elements[i]['center-scroll'] / ParallaxService.parallaxRate) + 'px)';
+                            element['background-element'].css('transform', 'translateY(' + translate + 'px)');
+                        }
+                    }
+                    // move whole element
+                    else {      
+                        // var translate = 'calc(' + centerScroll / ParallaxService.parallaxRate + 'px + 50vh)';
+                        // element['element'].css('transform', 'translateY(' + translate + ')');
                     }
                 }
-                // move whole element
-                else {      
-                    // var translate = 'calc(' + centerScroll / ParallaxService.parallaxRate + 'px + 50vh)';
-                    // element['element'].css('transform', 'translateY(' + translate + ')');
-                }
             }
-        }
 
 
-        // on window resize
+            // on window resize
 
-        function onWindowResize() 
-        {
-            onScroll();
-            setTimeout(function(){
-                ParallaxService.initilized = false;
-            }, 500);
-        }
-        $(window).resize(onWindowResize);
+            function onWindowResize() 
+            {
+                onScroll();
+                setTimeout(function(){
+                    ParallaxService.initilized = false;
+                }, 500);
+            }
+            $(window).resize(onWindowResize);
 
-        onWindowResize();
+            onWindowResize();
+
+        }, 0);
 
     };
 
@@ -81,7 +86,7 @@ var ParallaxService = angular.module('ParallaxService', [])
         for (i in this.elements) {
             this.elements[i]['height'] = this.elements[i]['element'].height();
             this.elements[i]['offset'] = this.elements[i]['element'].offset().top;
-            console.log(this.elements[i]['offset']);
+            // console.log(this.elements[i]['offset']);
             // distance from the top of page to the center of element
             this.elements[i]['center-offset'] = this.elements[i]['offset'] + this.elements[i]['height'] * 0.5;
             if (!this.elements[i]['center-offset']) {
@@ -112,6 +117,7 @@ var ParallaxService = angular.module('ParallaxService', [])
     this.remove = function()
     {
         this.elements = [];
+        this.initilized = false;
     }
 
 

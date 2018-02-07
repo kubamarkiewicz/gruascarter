@@ -1,7 +1,7 @@
 app.controller('ElGrupoController', function($scope, $rootScope, $http, $routeParams, config, ParallaxService) {  
 
-    // ParallaxService.add($('section#el-grupo-header'), true);
-    $("section#el-grupo-header").paroller({ factor: '0.75'});
+    ParallaxService.add($('section#el-grupo-header'), true);
+    // $("section#el-grupo-header").paroller({ factor: '0.75'});
 
 
     $('section#el-grupo-contact .column-left, section#el-grupo-contact .column-right').appear(function() {
