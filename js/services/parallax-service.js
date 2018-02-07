@@ -2,7 +2,8 @@ var ParallaxService = angular.module('ParallaxService', [])
 .service('ParallaxService', function ($rootScope) 
 {
 
-    this.parallaxRate = 0.75; // between 0 and 1
+    // this.parallaxRate = 0.75; // between 0 and 1
+    this.parallaxRate = 1; // between 0 and 1
 
     this.elements = [];
     this.initilized = false;
@@ -101,9 +102,7 @@ var ParallaxService = angular.module('ParallaxService', [])
                 this.elements[i]['background-element'].css('background-image', this.elements[i]['element'].css('background-image'));
                 this.elements[i]['element'].css('background-size', '0').css('position', 'relative');
                 // set background height
-                // var backgroundHeight = (1 + this.parallaxRate) * this.elements[i]['height'] + this.parallaxRate * this.windowHeight;
-                // var backgroundHeight = (1 + this.parallaxRate) * this.windowHeight;
-                var backgroundHeight = this.windowHeight - (this.windowHeight - this.elements[i]['height']) * this.parallaxRate;
+                var backgroundHeight = this.windowHeight;
                 this.elements[i]['background-element'].css('height', backgroundHeight + 'px');
                 this.elements[i]['background-element'].css('margin-top', ((this.elements[i]['height'] - backgroundHeight) / 2) + 'px');
             } 
