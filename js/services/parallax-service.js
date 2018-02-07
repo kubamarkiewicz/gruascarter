@@ -78,7 +78,6 @@ var ParallaxService = angular.module('ParallaxService', [])
     this.init = function()
     {
         // console.log('init');
-        // console.log(this.elements);
         this.initilized = true;
 
         this.windowHeight = $(window).height();
@@ -93,13 +92,16 @@ var ParallaxService = angular.module('ParallaxService', [])
                 this.initilized = false;
             }
 
-            if (this.elements[i]['background'] && !this.elements[i]['background-element']) {
-                // create background element
-                this.elements[i]['element'].prepend('<div class="parallax-background"></div>');
-                this.elements[i]['background-element'] = this.elements[i]['element'].find('.parallax-background');
-                // set background image
-                this.elements[i]['background-element'].css('background-image', this.elements[i]['element'].css('background-image'));
-                this.elements[i]['element'].css('background-size', '0').css('position', 'relative');
+            if (this.elements[i]['background']) {
+
+                if (!this.elements[i]['background-element']) {
+                    // create background element
+                    this.elements[i]['element'].prepend('<div class="parallax-background"></div>');
+                    this.elements[i]['background-element'] = this.elements[i]['element'].find('.parallax-background');
+                    // set background image
+                    this.elements[i]['background-element'].css('background-image', this.elements[i]['element'].css('background-image'));
+                    this.elements[i]['element'].css('background-size', '0').css('position', 'relative');
+                }
                 // set background height
                 var backgroundHeight = this.windowHeight;
                 this.elements[i]['background-element'].css('height', backgroundHeight + 'px');

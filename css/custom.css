@@ -93,14 +93,26 @@ body.loading > footer {
 }
 body > main {
 	margin-top: 138px;
+	animation-name: animation-page-transition;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(.46,1,1,1);
 }
+@keyframes animation-page-transition {
+    0%   {opacity: 0; transform: translateX(50%);}
+    100% {opacity: 1; transform: translateX(0%)}
+}
+body.prev-page-undefined > main {
+	animation-duration: 0s;
+}
+
 
 
 
 /***********************************************/
 /* Page transitions                            */
 /***********************************************/
-
+/*
 .ng-enter {
     transition: all 0.3s cubic-bezier(.46,1,1,1);
     opacity: 0;
@@ -122,7 +134,7 @@ body.prev-page-undefined .ng-enter {
     transform: translateX(0%);
 }
 
-
+*/
 
 /***********************************************/
 /* Overwritten Bootstrap Styles                */
