@@ -206,7 +206,6 @@ app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route
 
 
 
-
     // load pages data
     $rootScope.pagesData = [];
     $rootScope.loadPagesData = function()
@@ -224,7 +223,6 @@ app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route
         });
     }
     $rootScope.loadPagesData();
-
 
 
 

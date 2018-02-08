@@ -5,7 +5,7 @@ fields:
         span: auto
         type: text
     published:
-        label: 'kubamarkiewicz.pages::lang.published'
+        label: 'kubamarkiewicz.pages::lang.page.published'
         span: auto
         type: switch
 tabs:
@@ -17,14 +17,14 @@ tabs:
             descriptionFrom: description
             span: left
             type: relation
-            tab: Basic
+            tab: 'kubamarkiewicz.pages::lang.page.configuration'
             emptyOption: '---'
         slug:
             label: URL
             oc.commentPosition: ''
             span: left
             type: text
-            tab: Basic
+            tab: 'kubamarkiewicz.pages::lang.page.configuration'
         meta_title:
             label: 'kubamarkiewicz.pages::lang.page.meta_title'
             oc.commentPosition: ''

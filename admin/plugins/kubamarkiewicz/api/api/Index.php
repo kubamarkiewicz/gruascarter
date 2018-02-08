@@ -1,4 +1,4 @@
-<?php namespace KubaMarkiewicz\Gruascarter\Api;
+<?php namespace KubaMarkiewicz\Api\Api;
 
 use Illuminate\Routing\Controller;
 use Input;
@@ -22,13 +22,13 @@ class Index extends Controller
 		foreach ($routes as $route) {
 			if ((strpos($route->uri(), $urlPrefix) === 0) && ($route->uri() != $currentRoute)) {
                 $data['routes'][] = [
-                    'method' => $route->methods[0],
+                    'method' => str_pad($route->methods[0], 4),
                     'url'    => url('/').'/'.$route->uri()
                 ];
 			}
 		}
 
-        return View::make('kubamarkiewicz.gruascarter::api.index', $data);
+        return View::make('kubamarkiewicz.api::api.index', $data);
     }
 
 }

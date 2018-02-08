@@ -84,4 +84,9 @@
   'RainLab\\Builder\\Classes\\MenusModel' => 'plugins/rainlab/builder/classes/MenusModel.php',
   'RainLab\\Builder\\FormWidgets\\MenuEditor' => 'plugins/rainlab/builder/formwidgets/MenuEditor.php',
   'RainLab\\Builder\\Classes\\LanguageMixer' => 'plugins/rainlab/builder/classes/LanguageMixer.php',
+  'kubamarkiewicz\\api\\Plugin' => 'plugins/kubamarkiewicz/api/Plugin.php',
+  'KubaMarkiewicz\\Api\\Api\\Index' => 'plugins/kubamarkiewicz/api/api/Index.php',
+  'KubaMarkiewicz\\Pages\\Api\\Metadata' => 'plugins/kubamarkiewicz/pages/api/Metadata.php',
+  'RainLab\\Translate\\Classes\\LocaleMiddleware' => 'plugins/rainlab/translate/classes/LocaleMiddleware.php',
+  'RainLab\\Translate\\Models\\Message' => 'plugins/rainlab/translate/models/Message.php',
 );

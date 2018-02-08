@@ -10,11 +10,12 @@
     <title>API</title>
 
     <!-- Le styles -->
-	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.css">
 
     <style>
         body {
-            padding-top: 50px;
+            margin-top: 30px;
         }
         code {
             color: #00364e;
@@ -28,17 +29,19 @@
 
 </head>
 <body>
+    
+    <div class="container">
 
-    <main class="container">
-        
         <h5>API METHODS</h5>
-        <code>
-            {% for route in routes %}
-                {{ route.method }}   <a href="{{ route.url }}" target="_blank">{{ route.url }}</a><br>
-            {% endfor %}
-        </code>
+        
+        <pre>
+{% for route in routes %}{{ route.method }} <a href="{{ route.url }}" target="_blank">{{ route.url }}</a>
+{% endfor %}
+        </pre>
 
-    </main>
+    </div>
+
+
         
 </body>
 </html>

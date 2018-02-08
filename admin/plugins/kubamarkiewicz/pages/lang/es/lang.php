@@ -4,13 +4,14 @@
         'description' => '',
     ],
     'page' => [
-        'name' => 'Nombre',
-        'meta_title' => 'Meta título',
-        'meta_description' => 'Meta descripción',
-        'published' => 'Publicado',
+        'name' => 'Nombre de página',
+        'meta_title' => 'Título de página',
+        'meta_description' => 'Descripción',
+        'published' => 'Publicar',
+        'configuration' => 'Configuración',
     ],
     'permissions' => [
         'manage' => 'Gestionar páginas',
     ],
-    'published' => 'Publicado',
+    
 ];

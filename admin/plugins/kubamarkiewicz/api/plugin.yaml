@@ -1,0 +1,6 @@
+plugin:
+    name: API
+    description: 'Displays index of API methods'
+    author: 'Kuba Markiewicz'
+    icon: oc-icon-cogs
+    homepage: ''
