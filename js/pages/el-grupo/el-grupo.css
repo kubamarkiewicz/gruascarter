@@ -146,11 +146,15 @@ section#el-grupo-contact .column-right.appeared {
 
 	section#el-grupo-contact .column-left {
 		width: 100%;
+		opacity: 1;
+		transform: translateY(0);
 	}
 
 	section#el-grupo-contact .column-right {
 		padding: 50px 20px;
 		width: 100%;;
+		opacity: 1;
+		transform: translateY(0);
 	}
 
 }
