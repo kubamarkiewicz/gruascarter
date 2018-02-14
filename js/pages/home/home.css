@@ -4,6 +4,7 @@ section#home-1 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 110vh;
+	background-position: center center;;
 }
 section#home-1 .lead {
 	background-color: rgba(0,0,0,0.5);
@@ -118,6 +119,7 @@ section#home-3 h4 {
 section#home-4 {
 	background-size: cover;
 	background-repeat: repeat-y;
+	background-position: center center;
 	height: 72vh;
 }
 section#home-4 .lead {
@@ -185,11 +187,17 @@ section#home-contact .map {
 		margin-top: 80px;
 		margin-bottom: 80px;;;
 	}
+	section#home-3 .first-column {
+		opacity: 1; 
+		transform: translateX(0);
+	}
 	section#home-4 .lead h2 {
 		font-size: 30px;
+		opacity: 1; 
+		transform: translateX(0);
 	}
 	section#home-contact h2 {
-	font-size: 40px;;
+		font-size: 40px;;
 		
 	}
 

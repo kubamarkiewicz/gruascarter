@@ -6,6 +6,7 @@ var ParallaxService = angular.module('ParallaxService', [])
 
     this.elements = [];
     this.initilized = false;
+    this.isMobile = false;
 
     this.add = function(element, background) 
     {
@@ -32,6 +33,10 @@ var ParallaxService = angular.module('ParallaxService', [])
                 // console.log('onScroll');
                 if (!ParallaxService.initilized) {
                     ParallaxService.init();
+                }
+
+                if (ParallaxService.isMobile) {
+                    return;
                 }
 
                 var scrollTop = $(this).scrollTop();
@@ -79,10 +84,16 @@ var ParallaxService = angular.module('ParallaxService', [])
     {
         // console.log('init');
         this.initilized = true;
+        this.isMobile = $(window).width() < 992;
+
+        if (this.isMobile) {
+            return;
+        }
 
         this.windowHeight = $(window).height();
 
         for (i in this.elements) {
+
             this.elements[i]['height'] = this.elements[i]['element'].height();
             this.elements[i]['offset'] = this.elements[i]['element'].offset().top;
             // console.log(this.elements[i]['offset']);
@@ -111,6 +122,7 @@ var ParallaxService = angular.module('ParallaxService', [])
                 // this.elements[i]['element'].css('transform', 'none');
             }
         }
+
     }
 
 
