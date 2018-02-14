@@ -84,7 +84,7 @@ var ParallaxService = angular.module('ParallaxService', [])
     {
         // console.log('init');
         this.initilized = true;
-        this.isMobile = $(window).width() < 992;
+        this.isMobile = window.innerWidth < 992;
 
         if (this.isMobile) {
             return;

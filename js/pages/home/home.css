@@ -176,8 +176,14 @@ section#home-contact .map {
 /* mobile */
 @media screen and (max-width: 991px) {
 
+	section#home-1 {
+		height: 75vh;;
+	}
+	section#home-1 .lead {
+		margin-top: 155px;;
+	}
 	section#home-1 .lead h2 {
-		font-size: 40px;
+		font-size: 38px;
 	}
 	section#home-3::before {
 		display: none;

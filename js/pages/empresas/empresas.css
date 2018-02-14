@@ -1,5 +1,7 @@
 
-section#empresas-header {
+section#empresas-header {    
+	background-size: cover;    
+	background-position: center center;;;
 }
 section#empresas-header .container {    
 	background-color: rgba(0,0,0,0.5);
